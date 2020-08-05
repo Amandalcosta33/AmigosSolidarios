@@ -92,7 +92,6 @@ input {
 
 .container {
 	background-color: #fff;
-	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
@@ -255,6 +254,7 @@ footer a {
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
 		<form action="#">
+			<h2><a class="navbar-brand" href="index.php"><img src="/amigossolidarios/adm/img/icon.png" alt="logo" style="width: 30%;"></a></h2>
 			<h1>Criar conta</h1>
 			<span>Coloque as informções abaixo para criar sua conta</span>
 			<input type="text" placeholder="Nome" required/>
@@ -264,17 +264,19 @@ footer a {
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="post">
+			<h2><a class="navbar-brand" href="index.php"><img src="/amigossolidarios/adm/img/icon.png" alt="logo" style="width: 30%;"></a></h2>
 			<h1>Entrar</h1>
 			<span>Coloque as informções abaixo para acessar sua conta</span>
-			<input type="email" placeholder="Email" required/>
-			<input type="password" placeholder="Senha" required/>
-			<button>ENTRAR</button>
+			<input type="email" placeholder="Email"  name="email" id="email" required/>
+			<input type="password" placeholder="Senha" name="senha" id="senha" required/>
+			<button type="button" onclick="Acessar();">ENTRAR</button>
 		</form>
 	</div>
 	<div class="overlay-container">
 		<div class="overlay">
 			<div class="overlay-panel overlay-left">
+				
 				<h1>Bem vindo novamente!</h1>
 				<p>Para conectar em uma conta ja existente, clique no botão abaixo</p>
 				<button class="ghost" id="signIn">Entrar</button>
@@ -287,7 +289,8 @@ footer a {
 		</div>
 	</div>
 </div>
-
+<script src="adm/js/jquery-3.5.1.min.js"></script>
+<script src="adm/js/AcessarAjudante.js"></script>
 
 <script>
     const signUpButton = document.getElementById('signUp');

@@ -24,8 +24,8 @@
                       echo " <div class='carousel-item " . $inf['ATIVO'] . "'>"
                       ."<img  src='/final_de_curso_senac/adm/img/" . $inf['FOTO'] . "'>"
                       ."<div class='carousel-caption'>" 
-                      ."<h5>" . $inf['DESCRICAO'] . "</h5>"
-                      ."<p>" .$inf['LEGENDA'] . "</p>"
+                      ."<h5 style='color: black; text-align: center;'>" . $inf['DESCRICAO'] . "</h5>"
+                      ."<p> <a href='#'><button class='btn col-25' type='submit' style=' color: white; background: #f7663e;  width: 450px; box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); margin-left: 25px; color: black;'>" .$inf['LEGENDA'] . "</button></a></p>"
                       ."</div>"
                       ."</div>";
                   }

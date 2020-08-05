@@ -38,7 +38,8 @@ session_start();
   width: 100%;
   border: 0;
   padding: 15px;
-  color: #00000;
+  color: white;
+  font-weight: bold;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -78,7 +79,7 @@ body {
     <h1><a class="navbar-brand" href="index.php"><img src="/amigossolidarios/adm/img/icon.png" alt="logo" style="width: 50%;"></a></h1>
     <form class="login-form">
       <input  placeholder="Usuario" id="usuario" name="usuario" required>  
-      <input type="password" placeholder="Senha" id="senha" name="senha"required>
+      <input type="password" placeholder="Senha" id="senha" name="senha" required>
       <button type="button" onclick="Acessar();">Entrar</button>
     </form>
   </div>

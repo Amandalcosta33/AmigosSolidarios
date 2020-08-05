@@ -12,6 +12,8 @@ function Acessar(){
             console.log(retorno);
             if (retorno == 'ok'){
                 window.location.href = '/AmigosSolidarios/adm/index.php';
+            } else {
+                alert('Senha ou usuário incorretos, por favor revisar.');
             }
         }
     });

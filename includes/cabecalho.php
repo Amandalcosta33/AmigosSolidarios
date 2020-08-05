@@ -1,4 +1,9 @@
+<style>
+  a{
+    font-size: 16px;
+  }
 
+</style>
 <!Doctype html>
 <html lang="pt-br">
   <head>
@@ -22,30 +27,30 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active text-right">
-            <a class="nav-link text-right" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item  text-right">
+            <a class="nav-link text-right" style="font-size: 16px;" href="/AmigosSolidarios/index.php">Home</a>
           </li>
           <li class="nav-item text-right">
-            <a class="nav-link text-right" href="#">Fotos</a>
+            <a class="nav-link text-right" href="/AmigosSolidarios/fotos.php">Fotos</a>
           </li>
           <li class="nav-item text-right">
-            <a class="nav-link text-right" href="#">Eventos</a>
+            <a class="nav-link text-right" href="/AmigosSolidarios/eventos.php">Eventos</a>
           </li>
           <li class="nav-item text-right">
-            <a class="nav-link text-right" href="#">Quem somos</a>
+            <a class="nav-link text-right" href="/AmigosSolidarios/quemsomos.php">Quem somos</a>
           </li>
           <li class="nav-item dropdown text-right">
             <a class="nav-link dropdown-toggle text-right" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Entrar
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="cadastronovo.php">Entrar como ajudante</a>
+              <a class="dropdown-item" href="/AmigosSolidarios/cadastronovo.php">Entrar como ajudante</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="acessorestritologin.php">Acesso Restrito</a>
+              <a class="dropdown-item" href="/AmigosSolidarios/acessorestritologin.php">Acesso Restrito</a>
             </div>
           </li>
           <li>
-            <button class="btn col-25" type="submit" style="background: #f7663e; box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); margin-left: 25px;">FAÇA SUA DOAÇÃO</button>
+            <button class="btn col-25" type="submit" style=" border-radius: .25rem; background: #f7663e; box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); margin-left: 25px;">FAÇA SUA DOAÇÃO</button>
           </li>
         </ul>
 

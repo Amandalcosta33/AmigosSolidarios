@@ -19,6 +19,7 @@ class Login{
            echo "erro";
        } else {
         $_SESSION['ADM'] = $linhas[0][3];
+        $_SESSION['NOME'] = $linhas[0][2];
         echo "ok";
         // header("location:/AmigosSolidarios/adm/index.php");  
        }

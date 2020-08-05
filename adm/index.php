@@ -4,15 +4,15 @@ if(!$_SESSION['ADM']){
     header("location:/AmigosSolidarios/acessorestritologin.php");  
 }
 
+require_once"includesrestrito/cabecalhor.php";
+if($_SESSION['ADM'] == 'S'){
+    echo '<li  class="nav-item"><a class="nav-link" href="/amigossolidarios/adm/Usuarios/listar.php">Usuários</a></li>';
+}
 ?>
+</ul>
+</div>
+</nav>
+<main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
  
- 
- <a href="https://www.globo.com/">GLOBO</a>
 
-<?php
-    if($_SESSION['ADM'] == 'S'){
-        echo '<a href="https://www.uol.com.br/">UOL</a>';
-    }
-?>
-
-<a href="sair.php">Sair</a>
+<!-- <a href="sair.php">Sair</a> -->

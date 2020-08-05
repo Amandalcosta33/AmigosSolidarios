@@ -1,5 +1,16 @@
+<style>
+  .imgRedeScfooter{
+    opacity: 0.7;
+    width: 5%;
+  }
+
+  .imgRedeScfooter:hover{
+    opacity: 1;
+  }
+</style>
+
 <!-- Footer -->
-<footer class="page-footer font-small" style="background: #f7663e;">
+<footer class="page-footer font-small sbottom" style="background: #f7663e;">
 
   <!-- Footer Elements -->
   <div class="container" style="text-align: center;">
@@ -9,14 +20,14 @@
 
       <!-- Grid column -->
       <div class="col-md-12 py-3">
-        <div class="mb-5 flex-center">
+        <div class=" flex-center">
 
           <!-- Facebook -->
-          <a href="#" style="margin: 5px;"><img style="width: 5%;" src="/AmigosSolidarios/adm/img/iconfinder_Facebook_194929.png"> </a>
+          <a href="#" style="margin: 5px;"><img  class="imgRedeScfooter" src="/AmigosSolidarios/adm/img/iconfinder_Facebook_194929.png"> </a>
           <!--Instagram-->
-          <a href="#" style="margin: 5px;"><img style="width: 5%;" src="/AmigosSolidarios/adm/img/iconfinder_instagram_1218133.png"></a>
+          <a href="#" style="margin: 5px;"><img class="imgRedeScfooter" src="/AmigosSolidarios/adm/img/iconfinder_instagram_1218133.png"></a>
           <!-- youtube -->
-          <a href="#" style="margin: 5px;"><img style="width: 5%;" src="/AmigosSolidarios/adm/img/iconfinder_YouTube_194904.png"></a>
+          <a href="#" style="margin: 5px;"><img class="imgRedeScfooter" src="/AmigosSolidarios/adm/img/iconfinder_YouTube_194904.png"></a>
         </div>
       </div>
       <!-- Grid column -->
