@@ -8,7 +8,6 @@ function Acessar(){
             senha:$('#senha').val()
         },
         success: function(retorno){
-            console.log(retorno);
             if (retorno == 'ok'){
                 window.location.href = '/AmigosSolidarios/ajudante/index.php';
             } else {
@@ -16,4 +15,21 @@ function Acessar(){
             }
         }
     });
+}
+
+function CriarAjudante(){
+    $.ajax({
+        url: "adm/php/cadastrarAjudante.php",
+        type: 'post',
+        data: {
+            nome:$('#nomenovo').val(),
+            email:$('#emailnovo').val(),
+            senha:$('#senhanovo').val()
+        },
+        success: function(retorno){
+            alert( "Conta Criada, faça login pra continuar.");
+        }
+
+    })
+
 }

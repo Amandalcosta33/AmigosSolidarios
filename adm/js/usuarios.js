@@ -51,6 +51,9 @@ function ModoAlterarUsuario(botao){
         $('#senha-atualizar').parent().next().find('.bt-modo-alterar').show();
         $('#senha-atualizar').parent().html( $('#senha-atualizar').val());
         $('#adm-atualizar').parent().html( $('#adm-atualizar').val());
+        $('#usuario-atualizar').parent().html( $('#usuario-atualizar').val());
+        $('#nome-atualizar').parent().html( $('#nome-atualizar').val());
+
         
        
     }
@@ -60,9 +63,17 @@ function ModoAlterarUsuario(botao){
     let adm = $('#senha-atualizar').parent().prev().text();
     $('#senha-atualizar').parent().prev().html('<input id="adm-atualizar">');
 
+    let usuario = $('#adm-atualizar').parent().prev().text();
+    $('#adm-atualizar').parent().prev().html('<input id="usuario-atualizar">');
+
+    let nome = $('#usuario-atualizar').parent().prev().text();
+    $('#usuario-atualizar').parent().prev().html('<input id="nome-atualizar">');
+
 
     $('#senha-atualizar').val(senha);
     $('#adm-atualizar').val(adm);
+    $('#usuario-atualizar').val(usuario);
+    $('#nome-atualizar').val(nome);
 
     $(botao).next().show();
     $(botao).hide();
@@ -76,7 +87,9 @@ function AlterarUsuario(id){
         data:{
             ID:id,
             SENHA:$('#senha-atualizar').val(),
-            ADM:$('#adm-atualizar').val()
+            ADM:$('#adm-atualizar').val(),
+            USUARIO:$('#usuario-atualizar').val(),
+            NOME:$('#nome-atualizar').val()
         },
         success: function(retorno){
             $('.mensagem').html(retorno).show();

@@ -1,4 +1,5 @@
 <?php
+
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     
@@ -7,5 +8,6 @@
     
      $acesso->email = $email;
      $acesso->senha = $senha; 
-     $acesso->Acessar();
+     $acesso->Cadastrar();
 ?>
+

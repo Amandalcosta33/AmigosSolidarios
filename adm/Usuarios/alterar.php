@@ -1,7 +1,7 @@
 <?php
     $id = $_POST['ID'];
-    //$nome = $_POST['NOME'];
-    //$usuario = $_POST['USUARIO'];
+    $nome = $_POST['NOME'];
+    $usuario = $_POST['USUARIO'];
     $adm = $_POST['ADM'];
     $senha = $_POST['SENHA'];
    
@@ -10,8 +10,8 @@
     
      $novo = new Usuario();
      $novo->id = $id;
-     //$novo->nome = $nome;
-     //$novo->usuario = $usuario;
+     $novo->nome = $nome;
+     $novo->usuario = $usuario;
      $novo->senha = $senha;
      $novo->adm = $adm;
      $novo->Alterar();

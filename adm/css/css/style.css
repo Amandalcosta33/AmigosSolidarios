@@ -1128,7 +1128,7 @@ a {
   .swiper-container-rtl .swiper-button-next:before {
     background: rgba(0, 0, 0, 0.6);
     padding: 8px;
-    content: "\e5c4";
+    content: "<";
     font-size: 20px;
     color: #fff; }
 
@@ -1141,7 +1141,7 @@ a {
   .swiper-container-rtl .swiper-button-prev:before {
     background: rgba(0, 0, 0, 0.6);
     padding: 8px;
-    content: "\e5c8";
+    content: ">";
     font-size: 20px;
     color: #fff; }
 

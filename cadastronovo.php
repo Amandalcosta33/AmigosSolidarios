@@ -1,3 +1,5 @@
+
+
 <style>
     
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
@@ -253,14 +255,14 @@ footer a {
 </style>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form action="post">
 			<h2><a class="navbar-brand" href="index.php"><img src="/amigossolidarios/adm/img/icon.png" alt="logo" style="width: 30%;"></a></h2>
 			<h1>Criar conta</h1>
 			<span>Coloque as informções abaixo para criar sua conta</span>
-			<input type="text" placeholder="Nome" required/>
-			<input type="email" placeholder="Email" required/>
-			<input type="password" placeholder="Senha" required/>
-			<button>CRIAR</button>
+			<input type="text"  name="nomenovo" id="nomenovo" placeholder="Nome" required/>
+			<input type="email" name="emailnovo" id="emailnovo" placeholder="Email" required/>
+			<input type="password" name="senhanovo" id="senhanovo" placeholder="Senha" required/>
+			<button type="button" onclick="CriarAjudante();">CRIAR</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
@@ -293,7 +295,7 @@ footer a {
 <script src="adm/js/AcessarAjudante.js"></script>
 
 <script>
-    const signUpButton = document.getElementById('signUp');
+const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
 

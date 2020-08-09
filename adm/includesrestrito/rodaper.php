@@ -5,7 +5,9 @@
 <footer>
     todos os direitos reservaos &copy: ALCDATA 2020
 </footer>
+
 <script src="/amigossolidarios/adm/js/jquery-3.5.1.min.js"></script>
+<script src="/amigossolidarios/adm/lib/jquery.fancybox.js"></script>
 <!-- <script src="/php/simulador/js/bootstrap.bundle.js"></script> -->
 <?php if ($titulo == 'usuarios') { ?>
     <script src="/amigossolidarios/adm/js/usuarios.js"></script>

@@ -8,6 +8,7 @@ class Ajudante{
     /*atributos*/
    public $email;
    public $senha;
+   public $nome;
 
    //    metodos
    public function Acessar(){
@@ -23,6 +24,13 @@ class Ajudante{
         // header("location:/AmigosSolidarios/ajudante/index.php");  
        }
    }
+
+
+    public function Cadastrar(){
+        $query = "INSERT INTO ajudantes( nome, email, senha) VALUES ('{$this->nome}','{$this->email}','{$this->senha}')";
+        $conexao = Conexao::pegarConexao();
+        $conexao->exec($query);
+    }
 }
 
 ?>

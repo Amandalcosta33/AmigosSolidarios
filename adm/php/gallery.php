@@ -193,7 +193,7 @@
   
   <script>
     $(document).ready(function(){
-      $('#lightgallery').lightGallery();
+     // $('#lightgallery').lightGallery();
     });
   </script>
  <?php

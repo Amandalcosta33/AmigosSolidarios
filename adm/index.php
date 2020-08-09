@@ -13,6 +13,10 @@ if($_SESSION['ADM'] == 'S'){
 </div>
 </nav>
 <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <?php
+    require_once"php/opitions.php";
+    require_once"php/indexrestrito.php";
+    ?>
  
 
 <!-- <a href="sair.php">Sair</a> -->

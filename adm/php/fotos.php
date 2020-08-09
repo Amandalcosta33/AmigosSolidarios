@@ -106,13 +106,13 @@
 <script src="/Amigossolidarios/adm/css/js/aos.js"></script>
 
 <script src="/Amigossolidarios/adm/css/js/picturefill.min.js"></script>
-<script src="/Amigossolidarios/adm/css/js/lightgallery-all.min.js"></script>
+
 <script src="/Amigossolidarios/adm/css/js/jquery.mousewheel.min.js"></script>
 
 <script src="/Amigossolidarios/adm/css/js/main.js"></script>
 
 <script>
 $(document).ready(function(){
-$('#lightgallery').lightGallery();
+//$('#lightgallery').lightGallery();
 });
 </script>
